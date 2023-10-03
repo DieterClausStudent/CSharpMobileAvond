@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAvondlesOef3._2.MainPage">
+
+    <Grid Padding="5,0"
+          RowSpacing="1"
+          ColumnSpacing="1"
+          BackgroundColor="Black">
+        <Grid.RowDefinitions >
+            <RowDefinition Height="2*"></RowDefinition> 
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <!-- Row 1-->
+        <Label x:Name="LblResult" Grid.ColumnSpan="4" Text="0" FontAttributes="Bold" FontSize="48" BackgroundColor="Black" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" LineBreakMode="NoWrap"/>
+        <!-- Row 2-->
+        <Button x:Name="BtnSeven" Grid.Row="1" Text="7" FontAttributes="Bold" FontSize="48" BackgroundColor="White" TextColor="Black"  Clicked="BtnSeven_Clicked"/>
+        <Button x:Name="BtnEight" Grid.Row="1" Grid.Column="1" Text="8" FontAttributes="Bold" FontSize="48" BackgroundColor="White" TextColor="Black" Clicked="BtnEight_Clicked"/>
+        <Button x:Name="BtnNine" Grid.Row="1" Grid.Column="2" Text="9" FontAttributes="Bold" FontSize="48" BackgroundColor="White" TextColor="Black"  Clicked="BtnNine_Clicked"/>
+        <Button x:Name="BtnDelen" Grid.Row="1" Grid.Column="3" Text="/" FontAttributes="Bold" FontSize="48" BackgroundColor="#FFA500" TextColor="White" Clicked="BtnDelen_Clicked"/>
+        <!-- Row 3-->
+        <Button x:Name="BtnFour" Grid.Row="2" Grid.Column="0" Text="4" FontAttributes="Bold" FontSize="48" BackgroundColor="White" TextColor="Black" Clicked="BtnFour_Clicked" />
+        <Button x:Name="BtnFive" Grid.Row="2" Grid.Column="1" Text="5" FontAttributes="Bold" FontSize="48" BackgroundColor="White" TextColor="Black" Clicked="BtnFive_Clicked" />
+        <Button x:Name="BtnSix" Grid.Row="2" Grid.Column="2" Text="8" FontAttributes="Bold" FontSize="48" BackgroundColor="White" TextColor="Black" Clicked="BtnSix_Clicked" />
+        <Button x:Name="BtnMaal" Grid.Row="2" Grid.Column="3" Text="*" FontAttributes="Bold" FontSize="48" BackgroundColor="#FFA500" TextColor="White" Clicked="BtnMaal_Clicked" />
+        <!-- Row 4-->
+        <Button x:Name="BtnOne" Grid.Row="3" Grid.Column="0" Text="1" FontAttributes="Bold" FontSize="48" BackgroundColor="White" TextColor="Black" Clicked="BtnOne_Clicked"/>
+        <Button x:Name="BtnTwo" Grid.Row="3" Grid.Column="1" Text="2" FontAttributes="Bold" FontSize="48" BackgroundColor="White" TextColor="Black" Clicked="BtnTwo_Clicked"/>
+        <Button x:Name="BtnThree" Grid.Row="3" Grid.Column="2" Text="3" FontAttributes="Bold" FontSize="48" BackgroundColor="White" TextColor="Black" Clicked="BtnThree_Clicked"/>
+        <Button x:Name="BtnMinus" Grid.Row="3" Grid.Column="3" Text="-" FontAttributes="Bold" FontSize="48" BackgroundColor="#FFA500" TextColor="White"  Clicked="BtnMinus_Clicked"/>
+        <!-- Row 5-->
+        <Button x:Name="BtnZero" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Text="0" FontAttributes="Bold" FontSize="48" BackgroundColor="White" TextColor="Black" Clicked="BtnZero_Clicked"/>
+        <Button x:Name="BtnPlus" Grid.Row="4" Grid.Column="3" Text="+" FontAttributes="Bold" FontSize="48" BackgroundColor="#FFA500" TextColor="White" Clicked="BtnPlus_Clicked" />
+        <!-- Row 6-->
+        <Button x:Name="BtnClear" Grid.Row="5" Grid.Column="0" Text="C" FontAttributes="Bold" FontSize="48" BackgroundColor="#808080" TextColor="White" Clicked="BtnClear_Clicked"/>
+        <Button x:Name="BtnClear2" Grid.Row="4" Grid.Column="0" Text="C2" FontAttributes="Bold" FontSize="48" BackgroundColor="#808080" TextColor="White" Clicked="BtnClear_Clicked_1"/>
+
+        <Button x:Name="BtnResult" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" Text="=" FontAttributes="Bold" FontSize="48" BackgroundColor="#FFA500" TextColor="White" Clicked="BtnResult_Clicked" />
+
+
+
+
+
+    </Grid>
+
+</ContentPage>
