@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAvondlesOef3._3.ContentPagetest"
+             Title="ContentPagetest">
+    <ContentPage.Resources>
+        <Style x:Key="GreenButtonStyle" TargetType="{x:Type Button}" >
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="VerticalOptions" Value="Start"/>
+            <Setter Property="Background" Value="Green" />
+            <Setter Property="TextColor" Value="Black"/>
+        </Style>
+    </ContentPage.Resources>
+    <VerticalStackLayout>
+        <Button Text="Local Style" 
+            Style="{StaticResource GreenButtonStyle}"/>
+        <Button Text="Global style"
+                Style="{StaticResource RegularButtonStyle}"/>
+    </VerticalStackLayout>
+</ContentPage>

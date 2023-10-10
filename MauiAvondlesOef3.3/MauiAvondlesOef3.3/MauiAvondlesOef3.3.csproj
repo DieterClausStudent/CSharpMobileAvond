@@ -48,4 +48,30 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Resources\Images\bard.jpg" />
+	  <None Remove="Resources\Images\bilbo.jpg" />
+	  <None Remove="Resources\Images\elrond.jpg" />
+	  <None Remove="Resources\Images\galadriel.jpg" />
+	  <None Remove="Resources\Images\gandalf.jpg" />
+	  <None Remove="Resources\Images\gollum.jpg" />
+	  <None Remove="Resources\Images\legolas.jpg" />
+	  <None Remove="Resources\Images\sam.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="ContentPagetest.xaml.cs">
+	    <DependentUpon>ContentPagetest.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="ContentPagetest.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="DynamicResourcesPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

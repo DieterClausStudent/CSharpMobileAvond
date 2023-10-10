@@ -10,6 +10,9 @@ namespace MauiAvondlesOef3._3
     {
         List<Movie> Movies = new List<Movie>();
         List<Person> persons = new List<Person>();
-        
+        public Repo()
+        {
+            
+        }
     }
 }

@@ -9,7 +9,7 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
 
-                        <Border StrokeThickness="5" Background="YellowGreen">
+                        <Border StrokeThickness="5" Stroke="Orange" Background="YellowGreen">
                             <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition></RowDefinition>
@@ -34,7 +34,7 @@
 
                                 <Label  Grid.Row="1" 
                                         Grid.Column="1"
-                                        Text="{Binding City}"
+                                        Text="{Binding Race}"
                                         FontAttributes="Bold" VerticalOptions="Center"/>
                             
                         </Grid>

@@ -954,3 +954,11 @@ C:\CSharpMobileAvond\MauiAvondlesOef3.3\MauiAvondlesOef3.3\obj\Debug\net6.0-andr
 C:\CSharpMobileAvond\MauiAvondlesOef3.3\MauiAvondlesOef3.3\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 C:\CSharpMobileAvond\MauiAvondlesOef3.3\MauiAvondlesOef3.3\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\CSharpMobileAvond\MauiAvondlesOef3.3\MauiAvondlesOef3.3\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\CSharpMobileAvond\MauiAvondlesOef3.3\MauiAvondlesOef3.3\obj\Debug\net6.0-android\resizetizer\r\drawable\bard.jpg
+C:\CSharpMobileAvond\MauiAvondlesOef3.3\MauiAvondlesOef3.3\obj\Debug\net6.0-android\resizetizer\r\drawable\bilbo.jpg
+C:\CSharpMobileAvond\MauiAvondlesOef3.3\MauiAvondlesOef3.3\obj\Debug\net6.0-android\resizetizer\r\drawable\elrond.jpg
+C:\CSharpMobileAvond\MauiAvondlesOef3.3\MauiAvondlesOef3.3\obj\Debug\net6.0-android\resizetizer\r\drawable\galadriel.jpg
+C:\CSharpMobileAvond\MauiAvondlesOef3.3\MauiAvondlesOef3.3\obj\Debug\net6.0-android\resizetizer\r\drawable\gandalf.jpg
+C:\CSharpMobileAvond\MauiAvondlesOef3.3\MauiAvondlesOef3.3\obj\Debug\net6.0-android\resizetizer\r\drawable\gollum.jpg
+C:\CSharpMobileAvond\MauiAvondlesOef3.3\MauiAvondlesOef3.3\obj\Debug\net6.0-android\resizetizer\r\drawable\legolas.jpg
+C:\CSharpMobileAvond\MauiAvondlesOef3.3\MauiAvondlesOef3.3\obj\Debug\net6.0-android\resizetizer\r\drawable\sam.jpg

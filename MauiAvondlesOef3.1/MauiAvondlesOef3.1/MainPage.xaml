@@ -20,14 +20,27 @@
             </Grid.ColumnDefinitions>
 
 
-            <SearchBar x:Name="SearchBar" Grid.ColumnSpan="2" Placeholder= "Enter search term" BackgroundColor="Grey" HeightRequest="50" WidthRequest="250"  ></SearchBar>
-            <Switch x:Name="SwSwitch" Grid.Row="1" IsToggled="False" Toggled="SwSwitch_Toggled" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Grey"></Switch>
+            <SearchBar x:Name="SearchBar" Grid.ColumnSpan="2" Placeholder= "Enter search term" BackgroundColor="Grey" HeightRequest="50" WidthRequest="250" CancelButtonColor="Red"  ></SearchBar>
+            <Switch x:Name="SwSwitch" Grid.Row="1" IsToggled="False" OnColor="Red" Toggled="SwSwitch_Toggled" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Grey"></Switch>
             <TimePicker x:Name="TpTimePicker" Grid.Row="1" Grid.Column="1" BackgroundColor="Grey" HorizontalOptions="Center" VerticalOptions="Center"  ></TimePicker>
             <DatePicker x:Name="DpDatePicker" Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Grey" DateSelected="DpDatePicker_DateSelected"></DatePicker>
             <ActivityIndicator x:Name="AiActivityIndicator" Grid.Row="2" Grid.Column="1" BackgroundColor="Grey" WidthRequest="100" HeightRequest="100" IsRunning="True" ></ActivityIndicator>
-            <Editor x:Name="EdEditor"  Grid.Row="3" Grid.ColumnSpan="2" ></Editor>
+            <Editor x:Name="EdEditor"  Grid.Row="3" Grid.ColumnSpan="2" Text="TextEditor" AutoSize="TextChanges" ></Editor>
             <ProgressBar x:Name="PbProgressBar" Grid.Row="4" Grid.ColumnSpan="2" Progress="0" ProgressColor="Red" ></ProgressBar>
-            <!--<WebView x:Name="WebView" Source=" https://www.pxl.be" HeightRequest="450" Grid.Row="5" Grid.ColumnSpan="2"/> -->
+           <!-- <WebView x:Name="WebView" Source=" https://www.pxl.be" HeightRequest="450" Grid.Row="5" Grid.ColumnSpan="2"/> -->
+            <Picker x:Name="Picker" Title="Select a country">
+                <Picker.ItemsSource>
+                    <!--
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Belgiê</x:String>
+                        <x:String>Frankrijk</x:String>
+                    </x:Array>
+                    -->
+                </Picker.ItemsSource>
+            </Picker>
+            <DatePicker x:Name="DP" MinimumDate="1/1/2012" MaximumDate="1/1/2030">
+                
+            </DatePicker>
 
         </Grid>
     </ScrollView>

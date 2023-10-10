@@ -1,4 +1,12 @@
-﻿obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
+﻿obj\Debug\net6.0-android\resizetizer\r\drawable\bard.jpg
+obj\Debug\net6.0-android\resizetizer\r\drawable\bilbo.jpg
+obj\Debug\net6.0-android\resizetizer\r\drawable\elrond.jpg
+obj\Debug\net6.0-android\resizetizer\r\drawable\galadriel.jpg
+obj\Debug\net6.0-android\resizetizer\r\drawable\gandalf.jpg
+obj\Debug\net6.0-android\resizetizer\r\drawable\gollum.jpg
+obj\Debug\net6.0-android\resizetizer\r\drawable\legolas.jpg
+obj\Debug\net6.0-android\resizetizer\r\drawable\sam.jpg
+obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\splash.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\splash.png

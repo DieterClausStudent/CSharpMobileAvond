@@ -7,4 +7,12 @@
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
     <DefaultDevice>pixel_5_-_api_32_1</DefaultDevice>
   </PropertyGroup>
+  <ItemGroup>
+    <MauiXaml Update="ContentPagetest.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="DynamicResourcesPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+  </ItemGroup>
 </Project>

@@ -5,6 +5,18 @@
              x:Class="MauiAvondlesOef3._3.App">
     <Application.Resources>
         <ResourceDictionary>
+            <Style x:Key="RegularButtonStyle" TargetType="{x:Type Button}" >
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Start"/>
+                <Setter Property="Background" Value="Blue" />
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+            <Style x:Key="DarkButtonStyle" TargetType="{x:Type Button}" >
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Start"/>
+                <Setter Property="Background" Value="Black" />
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
