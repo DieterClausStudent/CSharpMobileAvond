@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAvondLesOef4_1.Pages.LoginPage"
+             Title="LoginPage">
+    <VerticalStackLayout BackgroundColor="#ababab">
+        <ScrollView>
+            <Grid RowDefinitions="auto,auto,auto" ColumnDefinitions="auto,0.1*,2*" >
+
+                <Label Text="Enter UserName:" Margin="0,10" TextColor="White" FontSize="15"/>
+                <Entry x:Name="EnUserName" Margin="0,10" Grid.Column="2" TextColor="White" Placeholder="DieterClaus"/>
+
+                <Label Text="Enter Password" TextColor="White" Margin="0,10" Grid.Row="1" />
+                <Entry x:Name="EnPassword" TextColor="White" Margin="0,10" Grid.Row="1" Grid.Column="2" Placeholder="Password"/>
+
+                <Button Text="Login" Margin="10,150,10,10" Grid.Row="2" MinimumHeightRequest="150" WidthRequest="350" HorizontalOptions="Center"  Grid.ColumnSpan="3" Style="{StaticResource RegularButtonRed}" Clicked="Button_Clicked"/>
+            </Grid>
+            
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>

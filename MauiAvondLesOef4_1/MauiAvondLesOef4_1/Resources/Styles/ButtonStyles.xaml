@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAvondLesOef4_1.Resources.Styles.ButtonStyles">
+
+    <Style x:Key="RegularButtonRed" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="Red"></Setter>
+        <Setter Property="BorderColor" Value="Yellow"></Setter>
+        <Setter Property="BorderWidth" Value="3"></Setter>
+        <Setter Property="VerticalOptions" Value="Center"></Setter>
+        <Setter Property="MinimumWidthRequest" Value="150"></Setter>
+        <Setter Property="TextColor" Value="Black"></Setter>
+    </Style>
+    <Style x:Key="HomePageButton" BasedOn="{StaticResource RegularButtonRed}" TargetType="Button">
+        <Setter Property="FontSize" Value="48"></Setter>
+    </Style>
+    <Style x:Key="BackButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="Yellow"></Setter>
+        <Setter Property="VerticalOptions" Value="End"></Setter>
+        <Setter Property="Margin" Value="10"></Setter>
+    </Style>
+</ResourceDictionary>

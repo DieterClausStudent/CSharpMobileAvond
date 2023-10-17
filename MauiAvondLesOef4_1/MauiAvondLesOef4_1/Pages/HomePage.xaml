@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAvondLesOef4_1.Pages.HomePage"
+             Title="HomePage">
+    <VerticalStackLayout>
+        <Image Source="https://i.pinimg.com/originals/64/0f/a5/640fa56d67765e8e8816ab98b7af07e0.jpg"/>
+        <Button x:Name="BtnGoToTeamPage" Style="{DynamicResource Key=HomePageButton}" Text="Team" Clicked="BtnGoToTeamPage_Clicked"></Button>
+        <Button x:Name="BtnGoToSettingsPage" Style="{DynamicResource Key=HomePageButton}" Text="Settings" Clicked="BtnGoToSettingsPage_Clicked"></Button>
+        <Button x:Name="BtnGoToAboutPage" Style="{DynamicResource Key=HomePageButton}" Text="About" Clicked="BtnGoToAboutPage_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>

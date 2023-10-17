@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MockUpProject.MainPage">
+
+    
+        <VerticalStackLayout BackgroundColor="#ebeff2"
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="logo.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+            <Label Text="UserName" TextColor="#cf1717" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="TxtUserName" Placeholder="enter your username"/>
+            <Label Text="Password" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#cf1717"/>
+            <Entry x:Name="TxtPassword" Placeholder="enter your password" />
+
+            <Button x:Name="BtnLogin" Text="Login" BackgroundColor="#12a4e3" FontAttributes="Bold,Italic" TextColor="#cf1717"/>
+            <Button x:Name="BtnRegister" Text="Register" BackgroundColor="#12a4e3" FontAttributes="Bold,Italic" TextColor="#cf1717"/>
+            <Button x:Name="BtnContinue" Text="Continue without login" BackgroundColor="#12a4e3" FontAttributes="Bold,Italic" TextColor="#cf1717"/>
+            
+
+        </VerticalStackLayout>
+    
+
+</ContentPage>
