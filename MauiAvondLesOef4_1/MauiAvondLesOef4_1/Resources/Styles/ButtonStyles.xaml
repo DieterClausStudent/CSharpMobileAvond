@@ -18,5 +18,7 @@
         <Setter Property="BackgroundColor" Value="Yellow"></Setter>
         <Setter Property="VerticalOptions" Value="End"></Setter>
         <Setter Property="Margin" Value="10"></Setter>
+        <Setter Property="TextColor" Value="Red"></Setter>
+        <Setter Property="Text" Value="Go Back"></Setter>
     </Style>
 </ResourceDictionary>

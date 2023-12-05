@@ -7,8 +7,8 @@ public partial class AboutPage : ContentPage
 		InitializeComponent();
 	}
 
-    private void BtnBack_Clicked(object sender, EventArgs e)
+    private async void BtnBack_Clicked(object sender, EventArgs e)
     {
-
+		await Shell.Current.GoToAsync("..");
     }
 }

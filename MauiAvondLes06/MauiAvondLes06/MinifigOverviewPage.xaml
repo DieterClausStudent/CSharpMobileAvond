@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAvondLes06.MinifigOverviewPage"
+             xmlns:Model="clr-namespace:MauiAvondLes06.Models"
+             xmlns:Convert="clr-namespace:MauiAvondLes06.Converters"
+             Title="MinifigOverviewPage">
+    <ContentPage.Resources>
+        <Convert:CurrencyConverter x:Key="LocalCurrencyConverter"></Convert:CurrencyConverter>
+        <Convert:DoubleToColorConverter x:Key="LocalDoubleToColorConverter"></Convert:DoubleToColorConverter>
+    </ContentPage.Resources>
+    <VerticalStackLayout>
+      
+
+        <CollectionView x:Name="MiniFigsList" 
+                        EmptyView="No items to display" 
+                        SelectionMode="Single"
+                        x:DataType="Model:MiniFig">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="3"
+                           Source="{Binding ImageUrl}"
+                           Aspect="AspectFill"
+                           HeightRequest="60"
+                           WidthRequest="60" />
+                        <Label Grid.Column="1"
+                           Text="{Binding Name}"
+                           FontAttributes="Bold" />
+                        <Label Grid.Row="1"
+                           Grid.Column="1"
+                           Text="{Binding Race}"
+                           FontAttributes="Italic"
+                           VerticalOptions="Center" />
+                        <Label Grid.Row="2"
+                           Grid.Column="3"
+                           Text="{Binding Price ,Converter={StaticResource LocalCurrencyConverter}}"
+                           FontAttributes="Italic"
+                           VerticalOptions="Center" 
+                               TextColor="{Binding Price, Converter={StaticResource LocalDoubleToColorConverter}, ConverterParameter=10}"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+                
+        </CollectionView>
+        <Button x:Name="AddButton" Clicked="AddButton_Clicked" Text="Add MiniFig"/>
+    </VerticalStackLayout>
+</ContentPage>

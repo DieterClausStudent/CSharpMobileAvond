@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAvondLes06.DataBindingPage"
+             Title="DataBindingPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Name"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+        <Entry x:Name="NameEntry" Text="{Binding Name}"/>
+        <Label 
+    Text="Price"
+    VerticalOptions="Center"
+    HorizontalOptions="Center" />
+        <Entry x:Name="PriceEntry" Text="{Binding Price}"/>
+        <Button x:Name="SaveButton" Text="Save" Clicked="SaveButton_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
